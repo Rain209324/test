@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+
+<head>
+    <title>上海地铁车型科普网页</title>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="main.css">
+    <style type="text/css">
+	    @import url('https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao|Long+Cang|Ma+Shan+Zheng|ZCOOL+KuaiLe|ZCOOL+QingKe+HuangYou|ZCOOL+XiaoWei&display=swap&subset=chinese-simplified');
+
+		body{
+			margin: 0px;
+		}
+      
+
+
+        
+        div {
+            width: 60%;
+            height: 700px;
+            background-color: rgba(255, 255, 255, 0.5);/*设置背景颜色*/
+            font-weight: bold;/*设置字体粗细*/
+            position: relative; /*设置定位模式*/
+            text-align: center;
+            left: 30%;
+            border-radius: 15px;/*设置圆角边框*/
+        }
+        img {
+            width: 400px;
+        }
+
+        /* 标题 */
+        h2 {
+            text-align: center;
+            font-size: 50px;
+            
+            color: rgba(26, 25, 24, 0.7);/*设置字体颜色*/
+            border-color: rgba(0, 0, 0, 0.3);
+            border-width: 3px;
+            border-style: solid;
+            border-radius: 15px;/*设置圆角边框*/
+            background-color: rgba(255, 255, 255, 0.7);/*设置背景颜色*/
+		
+        }
+		h4 {
+            text-align: center;
+            font-size: 30px;
+            
+            color: rgba(26, 25, 24, 0.7);/*设置字体颜色*/
+            border-color: rgba(0, 0, 0, 0.3);
+            border-width: 3px;
+            border-style: solid;
+            border-radius: 15px;/*设置圆角边框*/
+            background-color: rgba(255, 255, 255, 0.7);/*设置背景颜色*/
+		}
+        /* 导航栏布局 */
+        #content {
+            width: 16%;
+            height: 500px;
+            position: fixed;
+            background: rgba(121, 201, 238, 0.6);
+            top: 50px;
+            left: 100px;
+        }
+        /* 导航栏样式 */
+		ul {
+            position: relative; /* 导航栏定位模式【相对定位】 */
+            text-align: center; /* 文字居中 */
+            top: 5px; /* 距导航栏的上边框为10px */
+			list-style: none; /* 去掉文字前面的黑点 */
+		}
+		li {
+		    top: 0px ;
+            position: relative; /* 导航栏定位模式【相对定位】 */
+            height: 20px; /* li标签的高度 */
+			left: -20px; /* 距导航栏的左边框为20px */
+        }
+		#line1 {
+		    text-decoration: none;  
+            font-size: 15px;
+            color: rgb(234,27,57);
+		}
+		#line2 {
+		    text-decoration: none;  
+            font-size: 15px;
+            color: rgb(139,196,63);
+		}
+		#line3 {
+		    text-decoration: none;  
+            font-size: 15px;
+            color: rgb(251,210,8);
+		}
+		#line4 {
+		    text-decoration: none;  
+            font-size: 15px;
+            color: rgb(81,45,141);
+		}
+		#line5 {
+		    text-decoration: none;  
+            font-size: 15px;
+            color: rgb(144,86,163);
+		}
+		#line6 {
+		    text-decoration: none;  
+            font-size: 15px;
+            color: rgb(214,24,112);
+		}
+		#line7 {
+		    text-decoration: none;  
+            font-size: 15px;
+            color: rgb(244,113,33);
+		}
+		#line8 {
+		    text-decoration: none;  
+            font-size: 15px;
+            color: rgb(0,158,219);
+		}
+		#line9 {
+		    text-decoration: none;  
+            font-size: 15px;
+            color: rgb(255,255,255);
+		}
+		#line10 {
+		    text-decoration: none;  
+            font-size: 15px;
+            color: rgb(189,168,211);
+		}
+		#line11 {
+		    text-decoration: none;  
+            font-size: 15px;
+            color: rgb(127,33,49);
+		}
+		#line12 {
+		    text-decoration: none;  
+            font-size: 15px;
+            color: rgb(1,124,103);
+		}
+		#line13 {
+		    text-decoration: none;  
+            font-size: 15px;
+            color: rgb(232,149,193);
+		}
+		#line14 {
+		    text-decoration: none;  
+            font-size: 15px;
+            color: rgb(94,92,41);
+		}
+		#line15 {
+		    text-decoration: none;  
+            font-size: 15px;
+            color: rgb(187,167,134);
+		}
+		#line16 {
+		    text-decoration: none;  
+            font-size: 15px;
+            color: rgb(0,0,0);
+		}
+		#line17 {
+		    text-decoration: none;  
+            font-size: 15px;
+            color: rgb(184,121,116);
+		}
+		#line18 {
+		    text-decoration: none;  
+            font-size: 15px;
+            color: rgb(186,160,81);
+		}
+		#a {
+		    text-decoration: none;  
+            font-size: 15px;
+            color: rgb(255,0,0);
+		}
+		#b {
+		    text-decoration: none;  
+            font-size: 15px;
+            color: rgb(0,0,255);
+		}
+		#chapter1 {
+		    text-decoration: none;  
+            font-size: 25px;
+            color: rgb(234,27,57);
+		}
+		#chapter2 {
+		    position: absolute;
+			top: 5550px;
+		    text-decoration: none;  
+            font-size: 25px;
+            color: rgb(139,196,63);
+		}
+		#chapter3 {
+		    position: absolute;
+			top: 9500px;
+		    text-decoration: none;  
+            font-size: 25px;
+            color: rgb(251,210,8);
+		}
+		#chapter4 {
+		    position: absolute;
+			top: 11500px;
+		    text-decoration: none;  
+            font-size: 25px;
+            color: rgb(81,45,141);
+		}
+        #chapter5 {
+		    position: absolute;
+			top: 13250px;
+		    text-decoration: none;  
+            font-size: 25px;
+            color: rgb(144,86,163);
+		}
+		#chapter6 {
+		    position: absolute;
+			top: 15000px;
+		    text-decoration: none;  
+            font-size: 25px;
+            color: rgb(214,24,112);
+		}
+		#chapter7 {
+		    position: absolute;
+			top: 18250px;
+		    text-decoration: none;  
+            font-size: 25px;
+            color: rgb(244,113,33);
+		}
+		#chapter8 {
+		    position: absolute;
+			top: 20750px;
+		    text-decoration: none;  
+            font-size: 25px;
+            color: rgb(0,158,219);
+		}
+        #chapter9 {
+		    position: absolute;
+			top: 24000px;
+		    text-decoration: none;  
+            font-size: 25px;
+            color: rgb(121,201,238);
+		}
+		#chapter10 {
+		    position: absolute;
+			top: 27250px;
+		    text-decoration: none;  
+            font-size: 25px;
+            color: rgb(189,168,211);
+		}
+		#chapter11 {
+		    position: absolute;
+			top: 29000px;
+		    text-decoration: none;  
+            font-size: 25px;
+            color: rgb(127,33,49);
+		}
+		#chapter12 {
+		    position: absolute;
+			top: 31750px;
+		    text-decoration: none;  
+            font-size: 25px;
+            color: rgb(1,124,103);
+		}
+		#chapter13 {
+		    position: absolute;
+			top: 34500px;
+		    text-decoration: none;  
+            font-size: 25px;
+            color: rgb(232,149,193);
+		}
+		#chapter14 {
+		    position: absolute;
+			top: 36500px;
+		    text-decoration: none;  
+            font-size: 25px;
+            color: rgb(94,92,41);
+		}
+		#chapter15 {
+		    position: absolute;
+			top: 37500px;
+		    text-decoration: none;  
+            font-size: 25px;
+            color: rgb(187,167,134);
+		}
+		#chapter16 {
+		    position: absolute;
+			top: 38500px;
+		    text-decoration: none;  
+            font-size: 25px;
+            color: rgb(142,209,192);
+		}
+		#chapter17 {
+		    position: absolute;
+			top: 40500px;
+		    text-decoration: none;  
+            font-size: 25px;
+            color: rgb(184,121,116);
+		}
+		#chapter18 {
+		    position: absolute;
+			top: 41500px;
+		    text-decoration: none;  
+            font-size: 25px;
+            color: rgb(186,160,81);
+		}
+		#chapterp1 {
+		    position: absolute;
+			top: 42500px;
+		    text-decoration: none;  
+            font-size: 25px;
+            color: rgb(255,0,0);
+		}
+    </style>
+
+</head>
+
+<body>
+    
+    <!-- 导航栏 -->
+    <div id="content">
+	  
+        <ul>
+		    
+            <li><a id="line1" href="#chapter1">1号线</a></li>
+            <li><a id="line2" href="#chapter2">2号线</a></li>
+			<li><a id="line3" href="#chapter3">3号线</a></li>
+			<li><a id="line4" href="#chapter4">4号线</a></li>
+			<li><a id="line5" href="#chapter5">5号线</a></li>
+			<li><a id="line6" href="#chapter6">6号线</a></li>
+			<li><a id="line7" href="#chapter7">7号线</a></li>
+			<li><a id="line8" href="#chapter8">8号线</a></li>
+			<li><a id="line9" href="#chapter9">9号线</a></li>
+			<li><a id="line10" href="#chapter10">10号线</a></li>
+			<li><a id="line11" href="#chapter11">11号线</a></li>
+			<li><a id="line12" href="#chapter12">12号线</a></li>
+			<li><a id="line13" href="#chapter13">13号线</a></li>
+			<li><a id="line14" href="#chapter14">14号线</a></li>
+			<li><a id="line15" href="#chapter15">15号线</a></li>
+			<li><a id="line16" href="#chapter16">16号线</a></li>
+			<li><a id="line17" href="#chapter17">17号线</a></li>
+			<li><a id="line18" href="#chapter18">18号线</a></li>
+			<li><a id="a" href="#chapterp1">接触网/第三轨</a></li>
+			<li><a id="b" href="#chapterp2">作者序</a></li>
+        </ul>
+    </div>
+
+    <!-- 1号线  -->
+    <div id = "chapter1">
+        <h2> 1号线车型信息 </h2>
+		<h4> 01A01老老八 </h4>
+        <p>  车型老名：DC-01B </p>
+		<p>  车型新名：01A01 </p>
+		<p>  制造商：德国ADTranz原产、南车株洲改造 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：8节编组（A+B+C+B+C+B+C+A）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：1992年－1994年（19+车体号前2位） </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：11列（编号101-110,114） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列（注：101和109已不在正线运营，101在老张江，109备件，一说零件已拆除） </p>
+    
+		<h4> 01A02伪八二世 </h4>
+        <p>  车型老名：DC-01C </p>
+		<p>  车型新名：01A02 </p>
+		<p>  制造商：德国ADTranz原产、南车株洲改造 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：8节编组（A+B+C+B+C+B+C+A）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：1992年－1994年（19+车体号前2位,1-7车厢除外） </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：5列（编号111-113,115,116） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+		
+		<h4> 01A03老八 </h4>
+        <p>  车型老名：AC-01A/C </p>
+		<p>  车型新名：01A03 </p>
+		<p>  制造商：德国ADTranz原产、南车株洲改造 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：8节编组（A+B+C+B+C+B+C+A）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：1998年－1999年（19+车体号前2位） </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：5列（编号117-125） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+		
+		<h4> 01A04伪八 </h4>
+        <p>  车型老名：AC-01B </p>
+		<p>  车型新名：01A04 </p>
+		<p>  制造商：德国ADTranz原产、南车株洲改造 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：8节编组（A+B+C+B+C+B+C+A）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：1999年－2001年（19/20+车体号前2位,1-7车厢除外） </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：5列（编号126-137） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+		
+		<h4> 01A05胖头鱼 </h4>
+        <p>  车型老名：AC-06 </p>
+		<p>  车型新名：01A05 </p>
+		<p>  制造商：南车浦镇阿尔斯通 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：8节编组（Tc+Mp+M+Mp+M+M+Mp+Tc）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：2006年－2007年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：15列（编号140-155） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+		
+		<h4> 01A06钢铁侠 </h4>
+        <p>  车型老名：无 </p>
+		<p>  车型新名：01A06 </p>
+		<p>  制造商：中车株机 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：8节编组（Tc+Mp+M+Mp+M+M+Mp+Tc）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：2016年－2018年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：10列（编号156-166） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+		
+		<h4> 01A07钢铁侠二世 </h4>
+        <p>  车型老名：无 </p>
+		<p>  车型新名：01A07 </p>
+		<p>  制造商：中车株机 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：8节编组（Tc+Mp+M+Mp+M+M+Mp+Tc）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：2017年－2019年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：10列（编号167-186） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+    </div>
+	<!-- 2号线  -->
+    <div id = "chapter2">
+        <h2> 2号线车型信息 </h2>
+		<h4> 02A01西瓜 </h4>
+        <p>  车型老名：AC02A </p>
+		<p>  车型新名：02A01 </p>
+		<p>  制造商：德国ADTranz与西门子公司 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：8节编组（A+B+C+B+C+B+C+A）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：2000年－2001年（20+车体号前2位） </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：16列（编号201-216） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+    
+		<h4> 02A02青鱼 </h4>
+        <p>  车型老名：AC-08 </p>
+		<p>  车型新名：01A02 </p>
+		<p>  制造商：南车浦镇阿尔斯通 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：8节编组（Tc+Mp+M+Mp+M+M+Mp+Tc）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：2007年－2009年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：20列（编号233-253） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+		
+		<h4> 02A03鲶鱼 </h4>
+        <p>  车型老名：AC-17a </p>
+		<p>  车型新名：02A03 </p>
+		<p>  制造商：南车浦镇阿尔斯通 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：8节编组（Tc+Mp+Mp+M+Mp+M+Mp+Tc）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：2009年－2010年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：15列（编号254-269） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+		
+		<h4> 02A04扩编鲶鱼 </h4>
+        <p>  车型老名：AC-17b </p>
+		<p>  车型新名：02A04 </p>
+		<p>  制造商：中车浦镇阿尔斯通 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：8节编组（Tc+Mp+Mp+M+Mp+M+Mp+Tc）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：2019年－2020年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：20列（编号270-285） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+		
+		<h4> 02A05绿灯侠 </h4>
+        <p>  车型老名：无 </p>
+		<p>  车型新名：02A05 </p>
+		<p>  制造商：中车株机 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：8节编组（Tc+Mp+M+Mp+M+M+Mp+Tc）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：2017年－2020年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：10列（编号286-02116） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+		
+		
+    </div>
+	<!-- 3号线  -->
+    <div id = "chapter3">
+        <h2> 3号线车型信息 </h2>
+		<h4> 03A01黄鱼 </h4>
+        <p>  车型老名：AC03 </p>
+		<p>  车型新名：03A01 </p>
+		<p>  制造商：阿尔斯通 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：6节编组（Tc-Mp-M-M-Mp-Tc）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：2002年－2004年（20+车体号前2位） </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：28列（编号301-328） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+    
+		<h4> 03A02包公 </h4>
+        <p>  车型老名：无 </p>
+		<p>  车型新名：03A02 </p>
+		<p>  制造商：北车长客 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：6节编组（Tc-Mp-M-M-Mp-Tc）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：2014年－2017年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：7列（编号329-336） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+		
+		<h4> 04A02叛徒包公 </h4>
+		<p> 见4号线包公 </p>
+		
+    </div>
+    <!-- 4号线  -->
+    <div id = "chapter4">
+        <h2> 4号线车型信息 </h2>
+		<h4> 04A01奶嘴 </h4>
+        <p>  车型老名：AC05 </p>
+		<p>  车型新名：04A01 </p>
+		<p>  制造商：西门子 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：6节编组（Tc-Mp-M-M-Mp-Tc）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：2004年－2007年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：28列（编号401-428） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+    
+		<h4> 04A02包公 </h4>
+        <p>  车型老名：无 </p>
+		<p>  车型新名：04A02 </p>
+		<p>  制造商：北车长客 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：6节编组（Tc-Mp-M-M-Mp-Tc）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：2014年－2017年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：14列（编号429-455；437-449目前在3号线） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+		
+    </div>
+	<!-- 5号线  -->
+    <div id = "chapter5">
+        <h2> 5号线车型信息 </h2>
+		<h4> 05C01番茄炒蛋 </h4>
+        <p>  车型老名：AC11 </p>
+		<p>  车型新名：05C01 </p>
+		<p>  制造商：阿尔斯通 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：4节编组（Tc-Mp-Mp-Tc）</p>
+		<p>  车厢宽度形式：C型车 </p>
+		<p>  制造年代：2002年－2004年（20+车体号前2位） </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：17列（编号501-518，514除外） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+    
+		<h4> 05C02紫罗兰 </h4>
+        <p>  车型老名：无 </p>
+		<p>  车型新名：05C02 </p>
+		<p>  制造商：中车长客 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：6节编组（Tc-Mp-M-M-Mp-Tc）</p>
+		<p>  车厢宽度形式：C型车 </p>
+		<p>  制造年代：2017年－2019年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：33列（编号519-551） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+		
+		
+		
+    </div>
+	<!-- 6号线  -->
+    <div id = "chapter6">
+        <h2> 6号线车型信息 </h2>
+		<h4> 06C01Kitty </h4>
+        <p>  车型老名：AC12 </p>
+		<p>  车型新名：06C01 </p>
+		<p>  制造商：阿尔斯通 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：4节编组（Tc-Mp-Mp-Tc）</p>
+		<p>  车厢宽度形式：C型车 </p>
+		<p>  制造年代：2007年－2008年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：21列（编号601-623，604、614除外） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+		
+		<h4> 06C02纸花木兰 </h4>
+        <p>  车型老名：AC14a </p>
+		<p>  车型新名：06C02 </p>
+		<p>  制造商：北车长客 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：4节编组（Tc-Mp-Mp-Tc）</p>
+		<p>  车厢宽度形式：C型车 </p>
+		<p>  制造年代：2009年－2010年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：11列（编号625-636，634除外） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+		
+		<h4> 06C03电花木兰 </h4>
+        <p>  车型老名：AC14b </p>
+		<p>  车型新名：06C03 </p>
+		<p>  制造商：北车长客 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：4节编组（Tc-Mp-Mp-Tc）</p>
+		<p>  车厢宽度形式：C型车 </p>
+		<p>  制造年代：2011年－2013年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：18列（编号637-656，644、654除外） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+		
+		<h4> 06C04花木兰三世 </h4>
+        <p>  车型老名：无 </p>
+		<p>  车型新名：06C04 </p>
+		<p>  制造商：中车长客 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：4节编组（Tc-Mp-Mp-Tc）</p>
+		<p>  车厢宽度形式：C型车 </p>
+		<p>  制造年代：2018年－2020年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：26列（编号657-682） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+    
+		
+    </div>
+	<!-- 7号线  -->
+    <div id = "chapter7">
+	    <h2> 7号线车型信息 </h2>
+		<h4> 07A01芬达 </h4>
+		<p>  车型老名：AC10 </p>
+		<p>  车型新名：07A01 </p>
+		<p>  制造商：北车长客庞巴迪 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：6节编组（Tc-Mp-M-M-Mp-Tc）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：2008年－2010年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：42列（编号701-742） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+		
+		<h4> 07A02邦迪 </h4>
+		<p>  车型老名：无 </p>
+		<p>  车型新名：07A02 </p>
+		<p>  制造商：中车长客 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：6节编组（Tc-Mp-M-M-Mp-Tc）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：2016年－2019年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：29列（编号743-772） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+		
+		<h4> 07A03邦迪二世 </h4>
+		<p>  车型老名：无 </p>
+		<p>  车型新名：07A03 </p>
+		<p>  制造商：中车长客 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：6节编组（Tc-Mp-M-M-Mp-Tc）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：2019年－2020年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：30列（编号773-779） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+	</div>
+	<!-- 8号线  -->
+    <div id = "chapter8">
+        <h2> 8号线车型信息 </h2>
+		<h4> 08C01蓝精灵 </h4>
+        <p>  车型老名：AC07 </p>
+		<p>  车型新名：08C01 </p>
+		<p>  制造商：阿尔斯通 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：6节编组（Tc-Mp-M-M-Mp-Tc）</p>
+		<p>  车厢宽度形式：C型车 </p>
+		<p>  制造年代：2006年－2008年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：28列（编号801-828） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+		
+		<h4> 08C02纸泥鳅 </h4>
+        <p>  车型老名：AC15a </p>
+		<p>  车型新名：08C02 </p>
+		<p>  制造商：北车长客 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：7节编组（Tc-Mp-M-M-M-Mp-Tc）</p>
+		<p>  车厢宽度形式：C型车 </p>
+		<p>  制造年代：2009年－2010年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：18列（编号829-846） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+		
+		<h4> 08C03电泥鳅 </h4>
+        <p>  车型老名：AC15b </p>
+		<p>  车型新名：08C03 </p>
+		<p>  制造商：北车长客 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：7节编组（Tc-Mp-M-M-M-Mp-Tc）</p>
+		<p>  车厢宽度形式：C型车 </p>
+		<p>  制造年代：2010年－2012年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：20列（编号847-866） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+		
+		<h4> 08C04泥鳅三世 </h4>
+        <p>  车型老名：无 </p>
+		<p>  车型新名：08C04 </p>
+		<p>  制造商：中车长客 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：7节编组（Tc-Mp-M-M-M-Mp-Tc）</p>
+		<p>  车厢宽度形式：C型车 </p>
+		<p>  制造年代：2018年－2019年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：24列（编号867-890） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+    
+		
+    </div>
+	<!-- 9号线  -->
+    <div id = "chapter9">
+	    <h2> 9号线车型信息 </h2>
+		<h4> 09A01蚕宝宝 </h4>
+		<p>  车型老名：AC04 </p>
+		<p>  车型新名：09A01 </p>
+		<p>  制造商：庞巴迪 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：6节编组（Tc-Mp-M-M-Mp-Tc）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：2004年－2005年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：10列（编号901-910） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+		
+		<h4> 09A02冰露/坂田 </h4>
+		<p>  车型老名：AC09 </p>
+		<p>  车型新名：09A02 </p>
+		<p>  制造商：北车长客庞巴迪 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：6节编组（Tc-Mp-M-M-Mp-Tc）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：2007年－2010年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：40列（编号911-951） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+		
+		<h4> 09A03创可贴 </h4>
+		<p>  车型老名：无 </p>
+		<p>  车型新名：09A03 </p>
+		<p>  制造商：中车长客 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：6节编组（Tc-Mp-M-M-Mp-Tc）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：2016年－2018年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：35列（编号953-988） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+		
+		<h4> 09A04创可贴二世 </h4>
+		<p>  车型老名：无 </p>
+		<p>  车型新名：09A03 </p>
+		<p>  制造商：中车长客 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：6节编组（Tc-Mp-M-M-Mp-Tc）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：2018年－2020年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：16列（编号989-09105） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+		
+	</div>
+	<div id="chapter10">
+	    <h2> 10号线车型信息 </h2>
+		<h4> 10A01热带鱼 </h4>
+		<p>  车型老名：AC13 </p>
+		<p>  车型新名：10A01 </p>
+		<p>  制造商：南车浦镇阿尔斯通 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：6节编组（Tc-Mp-M-M-Mp-Tc）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：2009年－2012年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：41列（编号1001-1041） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+		
+		<h4> 10A02热带鱼二世 </h4>
+		<p>  车型老名：无 </p>
+		<p>  车型新名：10A02 </p>
+		<p>  制造商：中车浦镇 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：6节编组（Tc-Mp-M-M-Mp-Tc）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：2017年－ 202-年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：25列（编号1042-1067） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+	</div>
+	<div id="chapter11">
+	    <h2> 11号线车型信息 </h2>
+		<h4> 11A01奶咖 </h4>
+		<p>  车型老名：AC16 </p>
+		<p>  车型新名：11A01 </p>
+		<p>  制造商：南车株机 </p>
+		<p>  设计时速：100km/h </p>
+	    <p>  车辆编成：6节编组（Tc-Mp-M-M-Mp-Tc）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：2008年－2013年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：66列（编号1101-1166） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+		
+		<h4> 11A02伪咖 </h4>
+		<p>  车型老名：无 </p>
+		<p>  车型新名：11A02 </p>
+		<p>  制造商：北车长客 </p>
+		<p>  设计时速：100km/h </p>
+	    <p>  车辆编成：6节编组（Tc-Mp-M-M-Mp-Tc）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：2015年－2016年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：6列（编号1167-1172） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+		
+		<h4> 11A03奶咖二世 </h4>
+		<p>  车型老名：无 </p>
+		<p>  车型新名：11A01 </p>
+		<p>  制造商：南车株机 </p>
+		<p>  设计时速：100km/h </p>
+	    <p>  车辆编成：6节编组（Tc-Mp-M-M-Mp-Tc）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：2015年－2016年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：10列（编号1173-1182） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+	</div>
+	<div id="chapter12">
+	    <h2> 12号线车型信息 </h2>
+		<h4> 12A01雪碧 </h4>
+		<p>  车型老名：无 </p>
+		<p>  车型新名：12A01 </p>
+		<p>  制造商：北车长客庞巴迪 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：6节编组（Tc-Mp-M-M-Mp-Tc）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：2011年－2013年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：41列（编号1201-1241） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+		
+		<h4> 12A02雪碧二世 </h4>
+		<p>  车型老名：无 </p>
+		<p>  车型新名：12A02 </p>
+		<p>  制造商：中车长客 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：6节编组（Tc-Mp-M-M-Mp-Tc）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：2017年－2018年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：15列（编号1242-1256） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+		
+		<h4> 12A03雪碧二世 </h4>
+		<p>  车型老名：无 </p>
+		<p>  车型新名：12A03 </p>
+		<p>  制造商：中车长客 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：6节编组（Tc-Mp-M-M-Mp-Tc）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：2018年－2020年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：19列（编号1257-1275） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+	</div>
+	<div id="chapter13">
+	    <h2> 13号线车型信息 </h2>
+		<h4> 13A01奶粉 </h4>
+		<p>  车型老名：AC18 </p>
+		<p>  车型新名：13A01 </p>
+		<p>  制造商：南车浦镇 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：6节编组（Tc-Mp-M-M-Mp-Tc）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：2011年－2014年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：24列（编号1301-1324） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+		
+		<h4> 13A02奶粉二世 </h4>
+		<p>  车型老名：无 </p>
+		<p>  车型新名：13A02 </p>
+		<p>  制造商：南车浦镇 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：6节编组（Tc-Mp-M-M-Mp-Tc）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：2016年－2018年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：38列（编号1325-1362） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+	</div>
+	<div id="chapter14">
+	    <h2> 14号线（未开通）车型信息 </h2>
+		<h4> 14A01高达（未上线） </h4>
+		<p>  车型老名：无 </p>
+		<p>  车型新名：14A01 </p>
+		<p>  制造商：中车浦镇 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：8节编组（Tc-Mp-M-Mp-M-M-Mp-Tc）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：2019年－202-年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：49列（编号1401-1449） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+		
+	</div>
+	<div id="chapter15">
+	    <h2> 15号线（未开通）车型信息 </h2>
+		<h4> 15A01长鼻猴（未上线） </h4>
+		<p>  车型老名：无 </p>
+		<p>  车型新名：15A01 </p>
+		<p>  制造商：中车长客 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：6节编组（Tc-Mp-M-M-Mp-Tc）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：2019年－202-年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：54列（编号1501-1554） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+		
+	</div>
+	<div id="chapter16">
+	    <h2> 16号线车型信息 </h2>
+		<h4> 16A01抹茶 </h4>
+		<p>  车型老名：AC19 </p>
+		<p>  车型新名：16A01 </p>
+		<p>  制造商：南车株机 </p>
+		<p>  设计时速：120km/h </p>
+	    <p>  车辆编成：3节编组（Tmc-M-Tmc）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：2012年－2014年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：46列（编号1601-1646） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+		
+		<h4> 16A02抹茶 </h4>
+		<p>  车型老名：AC19 </p>
+		<p>  车型新名：16A02 </p>
+		<p>  制造商：中车株机 </p>
+		<p>  设计时速：120km/h </p>
+	    <p>  车辆编成：6节编组（Tc-M-Mp-Mp-M-Tc）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：2019年－2020年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：15列（编号1647-1661） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+		
+	</div>
+	<div id="chapter17">
+	    <h2> 17号线车型信息 </h2>
+		<h4> 17A01西柚 </h4>
+		<p>  车型老名：无 </p>
+		<p>  车型新名：17A01 </p>
+		<p>  制造商：中车长客 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：6节编组（Tc-Mp-M-M-Mp-Tc）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：2015年－2019年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：28列（编号1701-1728） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+		
+	</div>
+
+	<div id="chapter18">
+	    <h2> 18号线（未开通）车型信息 </h2>
+		<h4> 18A01闪电侠（未上线） </h4>
+		<p>  车型老名：无 </p>
+		<p>  车型新名：18A01 </p>
+		<p>  制造商：中车株机 </p>
+		<p>  设计时速：80km/h </p>
+	    <p>  车辆编成：6节编组（Tc-Mp-M-M-Mp-Tc）</p>
+		<p>  车厢宽度形式：A型车 </p>
+		<p>  制造年代：2019年－202-年 </p>
+		<p>  电机传动方式：VVVF交流传动 </p>
+		<p>  车辆总数：50列（编号1801-1850） </p>
+		<p>  设计寿命：30年 </p>
+		<p>  退役数量：0列 </p>
+		
+	</div>
+	<div id="chapterp1">
+	    <p>注：除16号线出入库线、17号线全线为第三轨供电，其他线路和区段均为接触网供电。</p>
+	</div>
+</body>
+
+</html>
